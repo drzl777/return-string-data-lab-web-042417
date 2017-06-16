@@ -23,3 +23,4 @@ end
   order.products << Product.find(Product.all.collect(&:id).sample)
 end
 
+Product.create!(name: "Test Product", inventory: 0, description: "This is a test description with more text than should be there.")
